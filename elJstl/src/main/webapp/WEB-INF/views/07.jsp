@@ -22,12 +22,18 @@
     application name = <%=application.getAttribute("name") %> <br/>
 	
 	<h2>el</h2>                   
+	page name = ${pageScope.name } <br />
+	request name = ${requestScope.name } <br />
+	session name = ${sessionScope.name } <br />
+	application name = ${applicationScope.name } <br />
 	
-
-
-
-
-
+	request userVo: ${requestScope.userVo } <br />
+	session userVo: ${sessionScope.userVo } <br />
+	
+	userVo: ${userVo } <br />
+	<!-- 동일 이름의 속성을 검색하 때 
+	pageSope -> requestScope -> sessionScope -> applicationScope 
+	-->
 	<br/>
 	
 
